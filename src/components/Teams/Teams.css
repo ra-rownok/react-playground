@@ -1,0 +1,31 @@
+.root{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.teams{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    grid-gap: 25px;
+    justify-content: center;
+}
+
+.title{
+    font-family: Gloria;
+    font-size: 2.5rem;
+}
+.title-top{
+    margin-top: 10px;
+}
+@media only screen and (max-width: 1200px) {
+    .teams{
+        display: grid;
+        grid-template-columns: repeat(2,250px);
+    }
+}
+@media only screen and (max-width: 768px) {
+    .teams{
+        display: grid;
+        grid-template-columns: repeat(1,240px);
+    }
+}
